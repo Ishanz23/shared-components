@@ -8,6 +8,8 @@ module.exports = withModuleFederationPlugin({
 
   exposes: {
     "./Module": "./projects/mfe-shared-components/src/app/app.module.ts",
+    "./DynamicComponent":
+      "./projects/mfe-shared-components/src/app/dynamic/dynamic.component.ts",
   },
   shared: share({
     "@angular/core": {
