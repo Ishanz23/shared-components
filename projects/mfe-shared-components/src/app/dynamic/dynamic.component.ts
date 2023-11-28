@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'mfe-shared-dynamic',
@@ -8,4 +8,10 @@ import { Component, Input } from '@angular/core';
 export class DynamicComponent {
   @Input() propOne!: string;
   @Input() propTwo!: number;
+  @Output() customEvent = new EventEmitter<string>();
+
+  onClickMe(event: MouseEvent) {
+    console.log(event);
+    this.customEvent.emit('Hi From Custom Event');
+  }
 }

@@ -7,9 +7,7 @@ module.exports = withModuleFederationPlugin({
   name: "mfe-shared-components",
 
   exposes: {
-    "./Module": "./projects/mfe-shared-components/src/app/app.module.ts",
-    "./DynamicComponent":
-      "./projects/mfe-shared-components/src/app/dynamic/dynamic.component.ts",
+    "./web-components": "./projects/mfe-shared-components/src/bootstrap.ts",
   },
   shared: share({
     "@angular/core": {
