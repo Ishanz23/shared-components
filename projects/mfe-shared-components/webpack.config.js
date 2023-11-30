@@ -8,6 +8,8 @@ module.exports = withModuleFederationPlugin({
 
   exposes: {
     "./web-components": "./projects/mfe-shared-components/src/bootstrap.ts",
+    "./user-service":
+      "./projects/mfe-shared-components/src/app/services/user.service.ts",
   },
   shared: share({
     "@angular/core": {
