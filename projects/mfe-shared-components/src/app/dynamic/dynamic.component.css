@@ -1,0 +1,15 @@
+.btn {
+  /* background-color: rgb(9, 67, 84); */
+  border-radius: 0.5rem;
+}
+.container {
+  border: 1px dotted gray;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-xl {
+  font-size: large;
+  font-weight: 600;
+}

@@ -1,9 +1,10 @@
-<p>dynamic component works!</p>
-<p>Prop 1 is {{ propOne }}</p>
-<p>Prop 2 is {{ propTwo }}</p>
-<button
-  class="p-4 rounded-md bg-slate-800 text-slate-700 hover:text-slate-700"
-  (click)="onClickMe($event)"
->
-  Click Me
-</button>
+<div class="container flex flex-col items-center p-4 border border-gray-600">
+  <p class="text-xl">This is a reusable component</p>
+  <p class="mb-2">Prop 1 : {{ propOne }}</p>
+  <button
+    class="p-2 px-4 rounded-md btn bg-slate-700 text-slate-100 hover:text-slate-700"
+    (click)="onClickMe($event)"
+  >
+    {{ buttonName | titlecase }}
+  </button>
+</div>
